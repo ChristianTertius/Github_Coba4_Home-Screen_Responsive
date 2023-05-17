@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-image: url("./Assets/Mentah.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.overlay {
+  background-color: black;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.text {
+  line-height: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text .satu {
+  font-family: "Kalam", cursive;
+}
+
+.text .dua {
+  font-family: "Architects Daughter", cursive;
+  font-size: 3rem;
+  font-weight: 1;
+  text-align: center;
+}
+
+.text .tiga {
+  font-family: "Nova Mono", monospace;
+  font-size: 27px;
+}
+
+/* Barrier Start */
+.barrier {
+  margin-top: 10px;
+  width: 100px;
+  height: 5px;
+  background-color: white;
+}
+/* Barrier End */
+
+/* Time Start */
+.clock {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.clock .days,
+.clock .hours,
+.clock .minutes,
+.clock .seconds {
+  height: 125px;
+  width: 125px;
+  /* margin-right: 50px; */
+  font-size: 1.3rem;
+  background: linear-gradient(180deg, #003C96 0%, rgba(0, 60, 150, 0) 100%);
+  box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nova Mono', monospace;
+  flex-direction: column;
+}
+
+
+.clock .titikdua{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.clock span{
+  font-size: 1.5rem;
+}
+
+/* Time End */
+
+
+/* Responsive Start */
+@media screen and (max-width: 767px) {
+  .text .satu {
+    font-size: 1.1rem;
+  }
+  
+  .text .dua {
+    font-size: 2rem;
+    font-weight: 1;
+    text-align: center;
+  }
+  
+  .text .tiga {
+    font-size: 1.1rem;
+  }
+
+  .clock {
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+  
+  }
+  
+  .clock .days,
+  .clock .hours,
+  .clock .minutes,
+  .clock .seconds {
+    height: 55px;
+    width: 55px;
+    font-size: .6rem;
+  }
+
+  .clock .titikdua{
+    padding: 10px;
+  }
+  .clock span{
+    font-size: 1rem;
+  }
+}
+/* Responsive End */
